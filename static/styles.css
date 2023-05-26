@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.parallax {
+    background-image: url("/static/images/giphy.gif");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.header-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background: transparent;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header h2 {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+#profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+section {
+    margin: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+section h3 {
+    margin-top: 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer a {
+    color: #00b7ff;
+}
