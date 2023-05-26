@@ -92,6 +92,8 @@ Your shell prompt will change to show the name of the activated environment.
 - Install Flask
     - `$ pip install Flask`
 
+- `python -m flask run`
+
 Please refer to the relevant documentation for more detailed steps and troubleshooting. If you encounter issues or have further questions, feel free to raise an issue in this repository.
 
 Helpful Links
