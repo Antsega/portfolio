@@ -1,22 +1,28 @@
-body, html {
-    height: 100%;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
     background: transparent;
 }
 
 #particles-js {
-    position: absolute;
+    margin-top: -40px;
+    position: fixed;
     width: 100%;
-    height: 100%;
+    height: 120%;
     background: black;
     z-index: -1;
-  }
-  
+    overflow: hidden;
+}
 
-.header-overlay {
+.header-overlay .container {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 header {
@@ -36,8 +42,8 @@ header h2 {
 }
 
 #profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 175px;
     border-radius: 50%;
     border: 3px solid white;
 }
@@ -63,4 +69,34 @@ footer {
 
 footer a {
     color: #00b7ff;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid #00b7ff;
+    border-radius: 50px;
+    transition: background 0.3 ease;
+}
+
+.social-btn.linkedin:hover {
+    background: #2867B2;
+}
+
+.social-btn.github:hover {
+    background: #333333;
+}
+
+.social-btn i {
+    font-size: 1.2em;
 }

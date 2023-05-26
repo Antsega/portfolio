@@ -100,3 +100,11 @@ Helpful Links
 Cloud Build Logs
 https://console.cloud.google.com/cloud-build/builds?_ga=2.14484660.2062548505.1685055387-541186574.1670604918&_gac=1.162001102.1685055996.Cj0KCQjwjryjBhD0ARIsAMLvnF8Kadh5r1uNcQIn4c_KN-lIMVPhHiKCX9nrzrIZvjbbiCoUAeeHaZIaAgWWEALw_wcB
 
+particles.js configuration
+https://github.com/VincentGarreau/particles.js/
+1) add particles.js
+2) particles.json
+3) index.html
+    - header
+    - div
+    - script
