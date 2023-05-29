@@ -96,6 +96,12 @@ Your shell prompt will change to show the name of the activated environment.
 
 Please refer to the relevant documentation for more detailed steps and troubleshooting. If you encounter issues or have further questions, feel free to raise an issue in this repository.
 
+**Step 5.2: No Access When Integrating**
+
+1) Update IAM User permission
+- Ensure <x>-compute@dev.gserviceaccount.com has 
+- Cloud Run Admin and Service Account User Roles  
+
 Helpful Links
 Cloud Build Logs
 https://console.cloud.google.com/cloud-build/builds?_ga=2.14484660.2062548505.1685055387-541186574.1670604918&_gac=1.162001102.1685055996.Cj0KCQjwjryjBhD0ARIsAMLvnF8Kadh5r1uNcQIn4c_KN-lIMVPhHiKCX9nrzrIZvjbbiCoUAeeHaZIaAgWWEALw_wcB
