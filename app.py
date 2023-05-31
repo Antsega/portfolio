@@ -6,6 +6,14 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/about-me')
+def aboutMe():
+    return render_template('about-me.html')
+
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':

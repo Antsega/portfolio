@@ -105,17 +105,19 @@ footer a {
     transition: background 0.3 ease;
 }
 
-.social-btn.linkedin:hover {
+.social-btn.linkedin:hover , .social-btn.github:hover {
     background: #2867B2;
 }
 
-.social-btn.github:hover {
-    background: #333333;
-}
 
 .social-btn i {
     font-size: 1.2em;
 }
+
+.navbar {
+    background: transparent;
+}
+
 
 /* Light Mode Start */
 
