@@ -10,6 +10,13 @@ body, html {
     background: transparent;
 }
 
+body {
+    font-family: Arial, sans-serif; /* Use a simple and clean typeface */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark gray text is softer on the eyes than black */
+    background-color: #f5f5f5; /* A light background to make the text stand out */
+}
+
 #particles-js {
     margin-top: -40px;
     position: fixed;
@@ -49,14 +56,23 @@ header h2 {
 }
 
 section {
-    margin: 15px;
-    padding: 10px;
-    background: white;
-    border-radius: 5px;
+    background-color: #fff; /* Use a white background for sections for contrast */
+    border-radius: 5px; /* Rounded borders for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    padding: 20px; /* Padding inside sections */
+    margin-bottom: 20px; /* Space between sections */
 }
 
 section h3 {
     margin-top: 0;
+    color: #2c3e50; /* A darker color for headings */
+    border-bottom: 1px solid #bdc3c7; /* A border to separate the heading from the content */
+    padding-bottom: 10px; /* Some space between the heading and the border */
+}
+
+section p {
+    text-align: justify; /* Justified text gives a more polished look */
+    color: #2c3e50; /* A color that matches with the heading */
 }
 
 footer {
@@ -100,3 +116,35 @@ footer a {
 .social-btn i {
     font-size: 1.2em;
 }
+
+/* Light Mode Start */
+
+body.light-theme {
+    /* Define your light theme styles here */
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-theme section {
+    background-color: #f0f0f0;
+}
+
+body.light-theme section h3 {
+    color: #333;
+}
+
+body.light-theme section p {
+    color: #333;
+}
+
+#particles-js.light-theme {
+    margin-top: -40px;
+    position: fixed;
+    width: 100%;
+    height: 120%;
+    background: #fff;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
