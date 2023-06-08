@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Use a simple and clean typeface */
+    line-height: 1.6; /* Improve readability */
+    color: #e0e0e0; /* Light gray text to be more readable on black background */
+    background-color: black; /* Set background color to black */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.image-placeholder {
+    flex: 1;
+    height: 300px;
+    border: 2px dashed #444; /* Darker border color for a cleaner look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888; /* Gray text color for placeholder */
+    font-size: 14px; /* Smaller text size for placeholder */
+}
+
+.content {
+    flex: 2;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #f2c94c; /* Golden color for section headings */
+    margin-bottom: 20px; /* Add space below headings */
+}
+
+p {
+    margin-bottom: 10px; /* Add some space between paragraphs */
+}
+
+.navbar-nav {
+    text-align: center;
+    flex-grow: 1;
+}
