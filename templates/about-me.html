@@ -52,10 +52,10 @@
                 <div id="leftCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="path-to-your-image-1" class="d-block w-100" alt="Image 1">
+                            <img src="{{ url_for('static', filename='images/headshot.jpg') }}" class="d-block w-100" alt="Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="path-to-your-image-2" class="d-block w-100" alt="Image 2">
+                            <img src="{{ url_for('static', filename='images/') }}" class="d-block w-100" alt="Image 2">
                         </div>
                         <!-- Add more images here -->
                     </div>
@@ -102,10 +102,10 @@
                 <div id="rightCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="path-to-your-image-3" class="d-block w-100" alt="Image 3">
+                            <img src="{{ url_for('static', filename='images/big_boat_guy.jpeg') }}" class="d-block w-100" alt="Image 3">
                         </div>
                         <div class="carousel-item">
-                            <img src="path-to-your-image-4" class="d-block w-100" alt="Image 4">
+                            <img src="{{ url_for('static', filename='images/') }}" class="d-block w-100" alt="Image 4">
                         </div>
                         <!-- Add more images here -->
                     </div>
