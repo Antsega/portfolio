@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous">
     <!-- styles CSS-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/about-me.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/about-me.css') }}">
     <title>About Me - Anthony Segarra</title>
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">Anthony Segarra</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#professional">Professional</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#personal">Personal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#background">Background</a>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarNav">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#professional">Professional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personal">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#background">Background</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -39,18 +48,38 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-3">
-                <div class="image-placeholder">Left Image Placeholder</div>
+                <!-- Left Carousel -->
+                <div id="leftCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="path-to-your-image-1" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="path-to-your-image-2" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <!-- Add more images here -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#leftCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#leftCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
             </div>
-            
+    
             <div class="col-md-6">
                 <!-- Professional Section -->
                 <div class="section" id="professional">
                     <h3 class="text-warning">Professional</h3>
                     <p>
-                        Anthony Segarra is a dynamic Senior Consultant...
+                        Anthony Segarra is a dynamic Senior Consultant with a well-established record of translating intricate business requirements into tangible, innovative solutions that consistently exceed expectations.
+                        <!-- ... rest of the content ... -->
                     </p>
                 </div>
-
+    
                 <!-- Personal Section -->
                 <div class="section" id="personal">
                     <h3 class="text-warning">Personal</h3>
@@ -58,7 +87,7 @@
                         [Add your personal content here]
                     </p>
                 </div>
-
+    
                 <!-- Background Section -->
                 <div class="section" id="background">
                     <h3 class="text-warning">Background</h3>
@@ -67,13 +96,35 @@
                     </p>
                 </div>
             </div>
-            
+    
             <div class="col-md-3">
-                <div class="image-placeholder">Right Image Placeholder</div>
+                <!-- Right Carousel -->
+                <div id="rightCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="path-to-your-image-3" class="d-block w-100" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="path-to-your-image-4" class="d-block w-100" alt="Image 4">
+                        </div>
+                        <!-- Add more images here -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#rightCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#rightCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
-</html>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    </body>
+    </html>
